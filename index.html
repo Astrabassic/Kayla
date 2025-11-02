@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Slider</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Slider Aku</h1>
+            <p>Ini Foto Foto imut aku hehe</p>
+        </header>
+
+        <div class="slider-wrapper">
+            <div class="slider">
+                <div class="slide active">
+                    <img src="01.jpg">
+                    <div class="slide-content">
+                        <h2>Picture 01</h2>
+                        <p>Lagi Imuttt hehe</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="02.jpg">
+                    <div class="slide-content">
+                        <h2>picture 02</h2>
+                        <p>lagi kyutt</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="03.jpg">
+                    <div class="slide-content">
+                        <h2>Picture 04</h2>
+                        <p>Lagi Cantikk</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="04.jpg">
+                    <div class="slide-content">
+                        <h2>Picture 04</h2>
+                        <p>lagi manyun hehe</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="05.jpg">
+                    <div class="slide-content">
+                        <h2>Picture 05</h2>
+                        <p>Lagi Good Mood hehe</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="nav-btn prev" aria-label="Previous slide">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <button class="nav-btn next" aria-label="Next slide">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+
+            <div class="dots-container"></div>
+        </div>
+
+        <div class="controls">
+            <button class="control-btn" id="playPauseBtn">
+                <svg class="play-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                <svg class="pause-icon hidden" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <rect x="6" y="4" width="4" height="16"></rect>
+                    <rect x="14" y="4" width="4" height="16"></rect>
+                </svg>
+                <span id="playPauseText">Autoplay</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
